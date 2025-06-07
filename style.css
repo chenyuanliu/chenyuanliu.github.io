@@ -44,10 +44,11 @@ header h1 {
 
 .profile {
   display: flex;
-  align-items: flex-start;
-  gap: 2rem;
+  align-items: center;
+  gap: 1.5rem;
   margin-bottom: 2rem;
   flex-wrap: wrap;
+  flex-direction: column; 
 }
 
 .profile img {
@@ -62,7 +63,7 @@ header h1 {
   flex: 1;
   text-align: justify;
   min-width: 250px;
-  max-width: 500px;
+  max-width: 100%;
 }
 
 .paper {
@@ -130,11 +131,10 @@ a.pdf-link {
   color: inherit;
 }
 
-@media (max-width: 600px) {
+@media (min-width: 700px) {
   .profile {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    flex-direction: row;     /* side-by-side on wider screens */
+    align-items: flex-start;
   }
 
   .bio {
