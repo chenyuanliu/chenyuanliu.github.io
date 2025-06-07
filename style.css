@@ -47,16 +47,21 @@ header h1 {
   align-items: flex-start;
   gap: 2rem;
   margin-bottom: 2rem;
+  flex-wrap: wrap;
 }
 
 .profile img {
   width: 200px;     /* increase size */
   height: auto;
   border-radius: 5px;
+  flex-shrink: 0;
 }
 
 
 .bio {
+  flex: 1;
+  text-align: justify;
+  min-width: 250px;
   max-width: 500px;
 }
 
@@ -123,4 +128,16 @@ a:hover {
 a.pdf-link {
   text-decoration: none;
   color: inherit;
+}
+
+@media (max-width: 600px) {
+  .profile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .bio {
+    text-align: justify;
+  }
 }
