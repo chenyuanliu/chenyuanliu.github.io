@@ -73,15 +73,25 @@ header h1 {
 .title {
   font-weight: bold;
   font-size: 1.05rem;
-  margin-bottom: 0.3em;
+  line-height: 1.35;
+  margin-bottom: 0.25em;
+  padding-left: 2.5rem;
+  text-indent: -2.5rem;
+}
+
+.title:not(:first-child) {
+  margin-top: 1.1rem;
 }
 
 
 .meta-line {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.5rem;
   align-items: center;
   font-size: 1rem;
+  line-height: 1.4;
+  padding-left: 2.5rem;
 }
 
 a.pdf-link:hover {
@@ -117,9 +127,10 @@ a:hover {
 
 .abstract {
   display: none;
-  margin-top: 0.5em;
+  margin-top: 0.4em;
   font-size: 1rem;
-  line-height: 1.4;
+  line-height: 1.45;
+  padding-left: 2.5rem;
 }
 
 .abstract.open {
